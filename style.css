@@ -1,4 +1,47 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vc-navbar {
+	color: black;
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGklEQVQYV2OUXyHx/2HEC0YGJIDCgYlTKAgAkysEBmE3n0QAAAAASUVORK5CYII=);*/
+	border-color: transparent;
+/*	min-height: 100px;*/
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Crimson Text', serif;
+}
+
 p {
-    color: red;
-    text-align: center;
+/*	font-weight: 00;*/
+}
+
+.jumbotron {
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQYV2P878//n3HjR0YGKIAzMARgKjFUAABX3QgFwfa2wgAAAABJRU5ErkJggg==);*/
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGklEQVQYV2OUXyHx/2HEC0YGJIDCgYlTKAgAkysEBmE3n0QAAAAASUVORK5CYII=);
+	padding: 100px 0 100px 0;	
+}
+
+.jumbotron p {
+/*	font-weight: 600;*/
+}/*
+
+p.jumbotext {
+	font-weight: 700;
+}*/
+
+.linetop {
+	border-width: 1px 0 0 0;
+	border-color: gray;
+	border-style: solid;
+}
+
+.padded-multi-line {
+	display: inline;
+	background: white;
+	box-shadow: 5px 0px 0px white, -5px 0px 0px white;
 }
