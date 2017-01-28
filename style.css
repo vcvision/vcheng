@@ -40,7 +40,7 @@ p {
 .jumbotron {
 	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQYV2P878//n3HjR0YGKIAzMARgKjFUAABX3QgFwfa2wgAAAABJRU5ErkJggg==);*/
 	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGklEQVQYV2OUXyHx/2HEC0YGJIDCgYlTKAgAkysEBmE3n0QAAAAASUVORK5CYII=);*/
-	padding: 100px 0 100px 0;	
+	/*padding: 100px 0 100px 0;	*/
 	position: static;
 	overflow: visible;
 	display: block;
@@ -48,9 +48,29 @@ p {
 	background: none;
 }
 
+.jumbocontainer {
+	padding-top: 4em;
+	background: url("Images/cover.JPG");
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
 .jumbotron p {
 	font-weight: 500;
-}/*
+}
+
+h1.jumboheadline {
+	font-weight: 600;
+	font-size: 36px;
+	margin-bottom: .5em;
+}
+
+p.jumbointro {
+	margin-bottom: 0em;
+}
+
+/*
 
 p.jumbotext {
 	font-weight: 700;
@@ -63,25 +83,27 @@ p.jumbotext {
 }
 
 .padded-multi-line {
-	display: inline;
+	display: inline-block;
 	background: white;
 	box-shadow: 5px 0px 0px white, -5px 0px 0px white;
 }
 
 img.portrait {
 	margin-top: -30px;
-	margin-left: 00px;
-	height: 400px;
+	max-width: 40%;
+	/*border-color: white;
+	border-style: solid;
+	border-width: 120px;*/
 	/*background-size: 600px;*/
 	/*background: url("Images/Victor-bw.png");*/
 	/*background: url("Images/DSC01836.JPG");*/
 	/*background-size: contain;*/
 	/*background-position: center top;*/
 	background-repeat: no-repeat;
-	mix-blend-mode: hard-light;
+	/*mix-blend-mode: hard-light;*/
 /*	margin: auto;*/
 	position: absolute;
-	overflow: visible;
+	/*overflow: visible;*/
 	display: block;
 	z-index:-1;
 }
@@ -90,6 +112,7 @@ img.portrait {
 
 .container>h1, .container>p {
 	margin-left: 5%;
+	margin-right: 5%;
 }
 
 
