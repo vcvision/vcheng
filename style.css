@@ -6,13 +6,6 @@ body {
   font-weight: 400;
 }
 
-.vc-navbar {
-	color: black;
-	background-color: transparent;
-	border-color: transparent;
-/*	min-height: 100px;*/
-}
-
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Work Sans', sans-serif;
 }
@@ -30,14 +23,29 @@ p {
 /*	font-weight: 00;*/
 }
 
+/*MENU BAR STUFF*/
+
+.navbar {
+	color: black;
+	background-color: transparent;
+	border-color: transparent;
+/*	min-height: 100px;*/
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    mix-blend-mode: screen;
+
+}
+
 .jumbotron {
 	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQYV2P878//n3HjR0YGKIAzMARgKjFUAABX3QgFwfa2wgAAAABJRU5ErkJggg==);*/
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGklEQVQYV2OUXyHx/2HEC0YGJIDCgYlTKAgAkysEBmE3n0QAAAAASUVORK5CYII=);
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGklEQVQYV2OUXyHx/2HEC0YGJIDCgYlTKAgAkysEBmE3n0QAAAAASUVORK5CYII=);*/
 	padding: 100px 0 100px 0;	
 	position: static;
-	overflow: hidden;
+	overflow: visible;
 	display: block;
-	height: 500px;
+/*	height: 500px;*/
+	background: none;
 }
 
 .jumbotron p {
@@ -60,7 +68,75 @@ p.jumbotext {
 	box-shadow: 5px 0px 0px white, -5px 0px 0px white;
 }
 
+img.portrait {
+	margin-top: -30px;
+	margin-left: 00px;
+	height: 400px;
+	/*background-size: 600px;*/
+	/*background: url("Images/Victor-bw.png");*/
+	/*background: url("Images/DSC01836.JPG");*/
+	/*background-size: contain;*/
+	/*background-position: center top;*/
+	background-repeat: no-repeat;
+	mix-blend-mode: hard-light;
+/*	margin: auto;*/
+	position: absolute;
+	overflow: visible;
+	display: block;
+	z-index:-1;
+}
+
+/*TITLE STUFF*/
+
+.container>h1, .container>p {
+	margin-left: 5%;
+}
+
+
+
+
+/*BACKGROUND*/
+
+.introrain {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url("Images/introrain.svg") #ffeed9;
+	background-blend-mode: normal;
+	background-size: cover;
+	z-index: -1;
+}
+
+@keyframes hueshift {
+  0% {
+    background: blue;
+  }
+  50% {
+    fill: blue;
+  }
+  100%{
+  	background-color: yellow;
+  }
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 50;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+  	opacity: 50;
+  }
+}
+
 div.pulse {
+	display: none;
 	color: #ffb37c;
   	position:absolute;
   	font-size: 60px;
