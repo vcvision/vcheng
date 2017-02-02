@@ -19,6 +19,14 @@ a:hover {
 	background-color: yellow;
 }
 
+/*BUTTONS*/
+
+.btn {
+	border-style: none;
+}
+
+/*TYPOGRAPHY*/
+
 p {
 /*	font-weight: 00;*/
 }
@@ -26,15 +34,38 @@ p {
 /*MENU BAR STUFF*/
 
 .navbar {
-	color: black;
 	background-color: transparent;
 	border-color: transparent;
+	transition: all 0.5s ease;
 /*	min-height: 100px;*/
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    mix-blend-mode: screen;
+.navbar:hover {
+	background: #ffeed9;
+}
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+/*    border-style: solid;
+    border-width: 4px 0 0 0;
+    border-color: blue;*/
+    background: none;
+    background-blend-mode: multiply;
+}
+
+.navbar-nav>.active>a:before {
+    content:"";
+    position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: #FFDEB5 transparent transparent transparent;
+    z-index:9999;
 }
 
 .jumbotron {
@@ -53,7 +84,7 @@ p {
 	background: url("Images/cover2.jpg");
 	background-size: cover;
 	background-position: center;
-	height: 500px;
+	height: 700px;
 }
 
 .jumbotron p {
@@ -127,9 +158,11 @@ img.portrait {
 	top: 0;
 	left: 0;
 	background: url("Images/introrain.svg") #ffeed9;
-	background-blend-mode: normal;
+	/*background: #fff;*/
+	background-blend-mode: none;
 	background-size: cover;
 	z-index: -1;
+	opacity: 0.3;
 }
 
 @keyframes hueshift {
