@@ -33,8 +33,22 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+<!-- CHOCOLAT LIGHTBOX -->
+
+<!-- 	<script type="text/javascript" src="chocolat/jquery.js"></script> -->
+	<script type="text/javascript" src="chocolat/jquery.chocolat.js"></script>
+	<link rel="stylesheet" href="chocolat/chocolat.css" type="text/css" media="screen" charset="utf-8">
 
   </head>
+
+<script>
+$(document).ready(function(){
+    $('.chocolat-parent').Chocolat();
+});
+</script>
+
 
   <body>
 
@@ -50,12 +64,12 @@
             <span class="icon-bar"></span>
           </button>
           <!-- NAVBAR LOGO -->
-          <a class="navbar-brand" href="#">VICTOR CHENG</a>
+<!--           <a class="navbar-brand" href="#">VICTOR CHENG</a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <!-- NAVBAR LEFT MENU START -->
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Victor Cheng</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
@@ -98,40 +112,72 @@
       </div>
     </div>
 
+<!-- ENGAGEMENT GUIDE -->
+
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class="col-md-12">
+          <h3>Student Engagement Guide</h3>
+          <p>Whitepaper layout and illustrations for OOHLALA Mobile.</p>
+          <hr>
         </div>
       </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2016 Company, Inc.</p>
-      </footer>
+      <div class='row'>
+        <div class="col-md-6">
+          <img class="thumbnail" src="Images/Portfolio/engagement/Artboard 1 copy 8.png">
+       </div>
+        <div class="col-md-6">
+          <img class="thumbnail" src="Images/Portfolio/engagement/Artboard 1 copy 4.png">
+       </div>
+      </div>
+      <div class='row'>
+        <div class="col-md-6">
+          <img class="thumbnail" src="Images/Portfolio/engagement/Artboard 1 copy 10.png">
+       </div>
+        <div class="col-md-6">
+          <img class="thumbnail" src="Images/Portfolio/engagement/Artboard 1 copy 12.png">
+       </div>
+      </div>
     </div> <!-- /container -->
+
+<!-- NEXT COLUMNS -->
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Student Engagement Guide</h3>
+          <p>Whitepaper layout and illustrations for OOHLALA Mobile.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-9">
+        	hmm
+       	</div>
+      </div>
+
+
+
+<!-- <div class="chocolat-parent" data-chocolat-title="set title">
+    <a class="chocolat-image" href="Images/Portfolio/engagement/Artboard 1 copy 8.png" title="caption image 1">
+        <img width="100" src="Images/Portfolio/engagement/Artboard 1 copy 8.png" />
+    </a>
+    <a class="chocolat-image" href="Images/Portfolio/engagement/Artboard 1 copy 4.png" title="caption image 2">
+        <img width="100" src="Images/Portfolio/engagement/Artboard 1 copy 4.png" />
+    </a>
+    <a class="chocolat-image" href="Images/Portfolio/engagement/Artboard 1 copy 5.png" title="caption image 3">
+        <img width="100" src="Images/Portfolio/engagement/Artboard 1 copy 5.png"/>
+    </a>
+</div> -->
+
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>

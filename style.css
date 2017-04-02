@@ -34,22 +34,27 @@ p {
 /*MENU BAR STUFF*/
 
 .navbar {
-	background-color: transparent;
+	background-color: white;
 	border-color: transparent;
 	transition: all 0.5s ease;
 /*	min-height: 100px;*/
 }
 
 .navbar:hover {
-	background: #ffeed9;
+/*	background: #ffeed9;*/
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 /*    border-style: solid;
     border-width: 4px 0 0 0;
     border-color: blue;*/
+    color: #333;
     background: none;
     background-blend-mode: multiply;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #AAA;
 }
 
 .navbar-nav>.active>a:before {
@@ -64,7 +69,8 @@ p {
     height: 0px;
     border-style: solid;
     border-width: 10px 10px 10px 10px;
-    border-color: #FFDEB5 transparent transparent transparent;
+/*    border-color: #FFDEB5 transparent transparent transparent;*/
+    border-color: blue transparent transparent transparent;
     z-index:9999;
 }
 
@@ -81,10 +87,11 @@ p {
 
 .jumbocontainer {
 	padding-top: 4em;
-	background: url("Images/cover2.jpg");
-	background-size: cover;
+/*	background: url("Images/cover2.jpg");*/
 	background-position: center;
-	height: 700px;
+	height: 300px;
+	background: url("Images/introrain.svg");
+	background-size: cover;
 }
 
 .jumbotron p {
@@ -146,7 +153,12 @@ img.portrait {
 	margin-right: 5%;
 }
 
-
+/*IMAGE HANDLING*/
+img.thumbnail {
+	width: 100%;
+	border: none;
+	margin-bottom: 30px;
+}
 
 
 /*BACKGROUND*/
@@ -157,12 +169,12 @@ img.portrait {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: url("Images/introrain.svg") #ffeed9;
+/*	background: url("Images/introrain.svg") #ffeed9;*/
 	/*background: #fff;*/
 	background-blend-mode: none;
 	background-size: cover;
 	z-index: -1;
-	opacity: 0.3;
+	opacity: 1;
 }
 
 @keyframes hueshift {
