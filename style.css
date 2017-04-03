@@ -79,8 +79,8 @@ p {
 	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGklEQVQYV2OUXyHx/2HEC0YGJIDCgYlTKAgAkysEBmE3n0QAAAAASUVORK5CYII=);*/
 	/*padding: 100px 0 100px 0;	*/
 	position: static;
-	overflow: visible;
-	display: block;
+/*	overflow: visible;*/
+/*	display: block;*/
 /*	height: 500px;*/
 	background: none;
 }
@@ -158,6 +158,10 @@ img.thumbnail {
 	width: 100%;
 	border: none;
 	margin-bottom: 30px;
+}
+
+hr.special {
+	width: 100%;
 }
 
 
