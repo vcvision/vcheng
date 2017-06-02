@@ -94,6 +94,12 @@ p {
 	background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .jumbocontainer {
+    height: 22em;
+  }
+}
+
 .jumbotron p {
 	font-weight: 500;
 }
