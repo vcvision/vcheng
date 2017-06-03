@@ -89,15 +89,21 @@ p {
 	padding-top: 4em;
 /*	background: url("Images/cover2.jpg");*/
 	background-position: center;
-	height: 30em;
+	height: 22em;
 	background: url("Images/introrain.svg");
 	background-size: cover;
 }
 
 @media (min-width: 768px) {
-  .jumbocontainer {
-    height: 22em;
-  }
+	.jumbotron p {
+		font-size: 21px;
+	}
+}
+
+@media (max-width: 767px) {
+	.jumbotron p {
+		font-size: 16px;
+	}
 }
 
 .jumbotron p {
