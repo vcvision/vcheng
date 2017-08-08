@@ -1,13 +1,16 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-family: 'Mada', sans-serif;
+/*	background: url("Images/introrain.svg");
+	background-position: center;
+	background-size: stretch;*/
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Work Sans', sans-serif;
+/*	font-family: 'Work Sans', sans-serif;*/
+	font-family: 'Crimson Text', serif;
 }
 
 a:link,a:visited,a:active {
@@ -28,7 +31,8 @@ a:hover {
 /*TYPOGRAPHY*/
 
 p {
-/*	font-weight: 00;*/
+	font-weight: 400;
+/*	font-size: 18px;*/
 }
 
 /*MENU BAR STUFF*/
@@ -89,14 +93,14 @@ p {
 	padding-top: 4em;
 /*	background: url("Images/cover2.jpg");*/
 	background-position: center;
-	height: 22em;
-	background: url("Images/introrain.svg");
+	height: 30em;
+/*	background: url("Images/introrain.svg");*/
 	background-size: cover;
 }
 
 @media (min-width: 768px) {
 	.jumbotron p {
-		font-size: 21px;
+		font-size: 20px;
 	}
 }
 
@@ -106,24 +110,24 @@ p {
 	}
 }
 
-.jumbotron p {
-	font-weight: 500;
-}
+/*.jumbotron p {
+	font-weight: 600;
+}*/
 
 h1.jumboheadline {
-	font-weight: 600;
-	font-size: 36px;
+/*	font-weight: 600;*/
+	font-size: 60px;
 	margin-bottom: .5em;
 }
 
 p.jumbointro {
 	margin-bottom: 0em;
+	font-weight: 400;
+	line-height: 1.7em;
 }
 
-/*
-
-p.jumbotext {
-	font-weight: 700;
+/*p.jumbotext {
+	font-weight: 800;
 }*/
 
 .linetop {
@@ -134,8 +138,8 @@ p.jumbotext {
 
 .padded-multi-line {
 	display: inline-block;
-	background: white;
-	box-shadow: 5px 0px 0px white, -5px 0px 0px white;
+/*	background: white;
+	box-shadow: 5px 0px 0px white, -5px 0px 0px white;*/
 }
 
 img.portrait {
@@ -161,8 +165,8 @@ img.portrait {
 /*TITLE STUFF*/
 
 .container>h1, .container>p {
-	margin-left: 5%;
-	margin-right: 5%;
+/*	margin-left: 5%;
+	margin-right: 5%;*/
 }
 
 /*IMAGE HANDLING*/
@@ -174,6 +178,10 @@ img.thumbnail {
 
 hr.special {
 	width: 100%;
+}
+
+hr {
+	border-top: 1px dotted #8c8b8b;
 }
 
 
