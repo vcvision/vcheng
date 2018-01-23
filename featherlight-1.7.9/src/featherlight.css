@@ -8,7 +8,7 @@
 @media all {
 	html.with-featherlight {
 		/* disable global scrolling when featherlights are visible */
-/*		overflow: hidden;*/
+		/*overflow: hidden;*/
 	}
 
 	.featherlight {
