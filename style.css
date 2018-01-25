@@ -248,6 +248,12 @@ div.pulse {
   }
 }
 
+/*SPACING*/
+
+.container {
+	padding-bottom: 8em;
+}
+
 /*span.pulse {
     font-style: normal;
     transform-origin: 2px 2px;
